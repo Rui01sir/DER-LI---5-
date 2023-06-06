@@ -1,0 +1,1050 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+    
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    }
+
+/* 導覽列 */
+nav{
+    background-color: #D6B167;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top:0;
+    z-index:10;
+}
+
+/* img{
+    object-fit:cover;
+} */
+
+.logo{
+    width:250px;
+    padding-top: 5px;
+    padding-left:50px;
+    padding-bottom: 5px;
+}
+
+/* input{
+    width: 33.3333%;
+    height: 38px;
+    padding-left:10px;
+    background-color:white;
+    border:2px solid #d0d0d0;
+    border-radius:20px;
+} */
+
+nav ul{
+    float: right;
+    margin-right: 70px;
+    margin-bottom: 0px;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: rgb(235, 238, 242);
+    font-size: 16px;
+    /* text-transform: uppercase; */
+}
+
+i.active,i:hover{
+    color: #7a7979;
+    transition:.3s;
+}
+
+a.active,a:hover{
+    color: #7a7979;
+    transition:.3s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(235, 238, 242);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn1{
+    font-size: 20px;
+    color: #987b48;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: 70px;
+    font-size: 16px;
+    /* background-color: red; */
+    color: rgb(255, 0, 0);
+    margin-right: 5px;
+    padding: 3px;
+    border-radius:100%;
+  }
+
+/* 下拉式選單 */
+@media(max-waidth:952px){
+    .checkbtn1{
+        display: none;
+    }
+    label.log{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    input{
+        width: 40%;
+        height: 38px;
+        padding-left:10px;
+    } 
+    input li i{
+        padding-left:100%;
+    }
+    .logo{
+        width:300px;
+        padding-top: 8px;
+        padding-left:70px;
+    }
+    .cartAmount {
+        position: absolute;
+        top: -15px;
+        right: 70px;
+        font-size: 16px;
+        /* background-color: red; */
+        color: rgb(255, 0, 0);
+        margin-right: 5px;
+        padding: 3px;
+        border-radius:100%;
+      }
+}
+
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block; 
+    }
+    .checkbtn1{
+        display: block; 
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:white;
+        top: 0px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 10;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a i{
+        color: #987b48;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+    nav ul li a {
+        color: #987b48;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+    .logo{
+        width:200px;
+        padding-top: 8px;
+        padding-left:20px;
+    }
+    .checkbtn:active,.checkbtn:hover{
+        color: #747474;
+    }
+    /* input{
+        width: 40%;
+        height: 38px;
+        padding-left:10px;
+    } */
+    a:hover,a.active{
+        background: none;
+        color: #747474;
+        padding-left: 10px;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+
+    #checki:checked~ul{
+        right:100%;
+    } 
+    .cartAmount {
+        position: absolute;
+        top:46.5%;
+        right:43.5%;
+        font-size: 16px;
+        /* background-color: red; */
+        color: rgb(255, 0, 0);
+        margin-right: 5px;
+        padding: 3px;
+        border-radius:100%;
+      }
+}
+
+
+/* 下拉選單 */
+
+  button {
+    display: none;
+}
+
+.drop a{
+    display: none;
+}
+  .box4 input{
+    display: none;
+    } 
+
+@media(max-waidth:952px){
+}
+@media(max-width:858px){
+
+    .dropdown{
+        display:inline-block;
+        position:relative;
+        width: 100%;
+        text-align: center;
+        z-index:4;
+      }
+    
+      button{
+        display: block;
+        width: 100%;
+      }
+    
+      .dropdown button{
+        border:none;
+        padding:8px 16px;
+        background-color:#7a7979;
+        color:white;
+        transition:.3s;
+        cursor:pointer;
+      }
+      
+      .dropdown:hover button{
+        background-color:#af9464;
+      }
+      
+      .dropdown div{
+        background-color:#fff;
+        box-shadow:0 4px 8px rgba(0,0,0,0.2);
+        z-index:1;
+        visibility:hidden;
+        position:absolute;
+        min-width:100%;
+        opacity:0;
+        transition:.3s;
+      }
+      
+      .dropdown:hover div{
+        visibility:visible;
+        opacity:1;
+      }
+      
+      .dropdown div a{
+        display:block;
+        text-decoration:none;
+        padding:8px;
+        color:#000;
+        transition:.1s;
+        white-space:nowrap;
+      }
+      
+      .dropdown div a:hover{
+        background-color:#987b48;
+        color:#fff;
+      }
+    
+}
+/* 商品列 */
+
+
+.box-1{
+    width: 25%;
+    height: 20%;
+    margin: 2.5% ;  
+}
+
+.box-1 img{
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.btn-1{
+    font-size: 1.5%;
+    width: 25%;
+    height: 8%;
+    border-radius:.5rem;
+    background-color:#987b48;;
+    border: 0px;
+    padding: 2%;
+}
+
+.card-1{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+.btn-1 a{
+    color: #fff;
+}
+
+.btn-1 a:hover,a.active{
+    background: none;
+    color: #bbbbbb;
+    padding-left: 10px;
+}
+
+@media(max-waidth:952px){
+    .box-1{
+        width: 25%;
+        height: 20%;
+        margin: 2.5% ;  
+    }
+    
+    .box-1 img{
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .card-1{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5%;
+    }
+    
+    .btn-1{
+        font-size: 1.5%;
+        width: 25%;
+        height: 8%;
+        border-radius:.5rem;
+        background-color: rgb(42, 65, 119);
+        border: 0px;
+        padding: 2%;
+    }
+    .btn-1 a:hover,a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+
+    }
+    
+@media(max-width:858px){
+    .box-1{
+        width: 80%;
+        height: 20%;
+        margin: 2% ;  
+    }
+    
+    .box-1 img{
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .card-1{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5%;
+    }
+    
+    .btn-1{
+        font-size: 1.5%;
+        width: 50%;
+        height: 8%;
+        border-radius:.5rem;
+        background-color: rgb(42, 65, 119);
+        border: 0px;
+        padding: 2%;
+    }
+    .btn-1 a:hover, a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+}
+
+.box2{
+    display: flex;
+    flex-direction:row;
+    justify-content:center ;
+    flex-wrap:wrap;
+    margin: 5%;
+}
+
+/* 解說 */
+.box4{
+    font-size: 20px;
+    padding-top: 5%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction:row;
+    height: 50%;
+    /* padding: 20%; */
+}
+
+.box4 ul li a{
+    color: rgb(18, 18, 19);
+    float: right;
+    margin-bottom: 10%;
+    padding-bottom: 2.5%;
+}
+
+.box4 ul li a:hover {
+    border-bottom:5px solid rgb(236, 101, 59);
+    margin-left: 8px;
+    transition: .2s;
+}
+
+.checkbtn2{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    line-height: 80px;
+    margin: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#checkbox{
+    display: none;
+}
+
+@media(max-waidth:952px){
+    /* .button{
+        display: none;
+    } */
+    
+
+    .box4 ul li a{
+        color: rgb(18, 18, 19);
+        float: right;
+        margin-bottom: 10%;
+        padding-bottom: 2.5%;
+    }
+    
+    .box4 ul li a:hover {
+        border-bottom:5px solid rgb(236, 101, 59);
+        padding-left: 10px;
+        transition: .2s;
+    }
+
+}
+@media(max-width:858px){
+    .box2{
+        display: flex;
+        flex-direction:column;
+        align-content: space-around;
+        /* justify-content:center ; */
+        flex-wrap:wrap;
+        margin: 2%;
+    }
+
+    label.checkbtn2 i{
+        font-size: 20px;
+    }
+    
+    label.checkbtn2{
+        font-size: 25px;
+        padding-left: 53px;
+        margin: 0px;
+    }
+    .box4{
+        font-size: 20px;
+        padding-top: 2%;
+        display: flex;
+        flex-direction:column-reverse;
+        height: 50%;
+        /* padding: 20%; */
+    }
+    .box4 ul li a i {
+        color: rgb(18, 18, 19);
+        float: none;
+        margin-bottom: 10%;
+        padding-bottom: 2.5%;
+    }
+    
+    .box4 ul li i a:hover {
+        border-bottom:5px solid rgb(236, 101, 59);
+        padding-left: 10px;
+        transition: .2s;
+    }
+    
+    .btn-2{
+        font-size: 1.5%;
+        width: 50%;
+        height: 8%;
+        border-radius:.5rem;
+        background-color: rgb(42, 65, 119);
+        border: 0px;
+        padding: 2%;
+    }
+    .btn a:hover, a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+    .checkbtn2{
+        display: block; 
+    }
+    .box4 ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:rgb(255, 60, 60);
+        left:0%;
+        top:-100%;
+        bottom: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+    .box4 ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    .box4 ul li a i{
+        color: rgb(12, 56, 109);
+        font-size: 20px;
+        transition: 0.3s;
+    }
+    .box4 ul li a {
+        color: rgb(12, 56, 109);
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .check2:active,.checkbtn2:hover{
+        color: #747474;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #747474;
+        padding-left: 10px;
+    }
+    #checksb:checked~ul{
+        top: 0;
+    }
+    #checksb:checked~ul{
+        bottom:100%; 
+    } 
+}
+
+/* 相關商品 */
+.menu{
+    background-color: rgb(149, 149, 149);
+    padding: 1%;
+}
+.menus{
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+}
+.name1{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.box9{
+    display: flex;
+    align-items: center
+}
+
+.box10{
+    width: 350px;
+    margin: 5%;
+}
+
+.box12{
+    font-size: 20px;
+    margin:5% ;
+}
+
+.box13{
+    width: 100px;
+    margin: 20px;
+    /* overflow: hidden; */
+}
+
+.img3{
+    width: 100px;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.option-text{
+    margin-bottom: 0;
+}
+
+/* 數量鍵 */
+.box6{
+    height: 3%;
+    width:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    border:1px solid gray;
+  }
+  .box6 span{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+  }
+  .box6 span.num{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    pointer-events: none;
+  }
+
+@media(max-waidth:952px){
+/* 相關商品 */
+.menu{
+    background-color: rgb(149, 149, 149);
+    padding: 1%;
+}
+.menus{
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+}
+.name1{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.box9{
+    display: flex;
+}
+
+.box10{
+    max-width: 250px;
+    margin: 5%;
+}
+
+.box12{
+    font-size: 20px;
+    margin:5% ;
+}
+
+.box13{
+    width: 100px;
+    margin: 20px;
+}
+
+.img3{
+    width: 100px;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.option-text{
+    margin-bottom: 0;
+}
+    /* 數量鍵 */
+    .box6{
+        height: 3%;
+        width:10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5%;
+        border:1px solid gray;
+    }
+    .box6 span{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+    }
+    .box6 span.num{
+        padding-left: 5px;
+        padding-right: 5px;
+        border-right: 1px solid gray;
+        border-left: 1px solid gray;
+        pointer-events: none;
+    }
+}
+
+@media(max-width:858px){
+      /* 相關商品 */
+.menu{
+    background-color: rgb(149, 149, 149);
+    padding: 1%;
+}
+.menus{
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+}
+.name1{
+    font-size: 5px;
+    margin-bottom: 0;
+}
+
+.box9{
+    display: flex;
+    align-items: center
+}
+
+.box10{
+    width: 250px;
+    margin: 5%;
+}
+
+.box12{
+    font-size: 5px;
+    margin:5% ;
+}
+
+.box13{
+    width: 100px;
+    margin: 0;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.img3{
+    width: 50px;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.option-text{
+    margin-bottom: 0;
+}
+/* 數量鍵 */
+.box6{
+    height: 3%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    border:.5px solid gray;
+}
+.box6 span{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+}
+.box6 span.num{
+    padding-left: 2px;
+    padding-right: 2px;
+    border-right: .5px solid gray;
+    border-left: .5px solid gray;
+    pointer-events: none;
+}
+}
+
+
+/* 總計 */
+.box8{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+
+}
+/* 下單 */
+.price{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+.btn3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.productprice{
+    /* padding-left: 33.33%; */
+    margin: 5%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #987b48
+}
+.number{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border:0.5px solid rgba(0,0,0,0.4);
+    border-radius: 20%;
+    margin-top: 3%;
+}
+.btn3 i {
+    margin:3.6%;
+}
+
+/* 訂單 */
+.box5{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
+.box5-1{
+    display: flex;
+    margin-right: 10%;
+    flex-direction: row;
+    margin:2%;
+}
+
+/* footer */
+.footer{
+    padding: 50px;
+    width: 100%;
+    height: 30%;
+    background-color: #916d2e;
+}
+
+.footer-container{
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.footer-row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+footer ul{
+    /* list-style: none; */
+    margin-bottom: 30px;
+}
+
+footer ul li i{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer li a{
+    color: #fff;
+    margin-left: 45px;
+}
+
+.footer-col{
+    margin: 2.5%;
+}
+
+.footer-col h3{
+    padding : 0 30px 10px;
+    font-size:18px;
+    color: #fff;
+    text-transform:capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content:center;
+}
+
+
+.footer-col2{
+    margin-top:10%;
+    font-size: 10px;
+    color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(./image/PG1.png);
+}
+
+.footer-col3{
+    width:100%;
+    height: 150px;
+    margin: 50px;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-col4{
+    padding-top:70px ;
+    padding-bottom:20px ;
+    display: flex;
+}
+
+.img1{
+    width: 60px; 
+    height: 60px;
+}
+.img2{
+    padding-top: 15px;
+    width: 150px; 
+    height: 50px;
+}
+
+
+
+@media(max-waidth:952px){
+    .footer-col{
+        margin: 2.5%;
+    }
+    .footer-col3{
+        width:100%;
+        height: 150px;
+        margin: 50px;
+        display: flex;
+        flex-direction:row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .footer-col4{
+        margin-top:70px ;
+        display: flex;
+    }
+    footer li a{
+        color: #fff;
+        margin: 100px;
+    }
+
+    a:hover,a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+    .footer-ul li{
+        display: flex;
+        justify-content:center;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+    .img1{
+        width: 80px; 
+        height: 80px;
+    }
+    .img2{
+        padding-top: 20px;
+        width: 100px; 
+        height: 25px;
+    }
+}
+
+@media(max-width:858px){
+    .footer-col{
+        text-align: center;
+    }
+    .footer-col3{
+        width:100%;
+        height: 150px;
+        margin: 50px;
+        display: flex;
+        flex-direction:column-reverse;
+        align-items:center;
+        justify-content: center;
+    }
+    .footer-col4{
+        padding-top:50px ;
+        padding-bottom: 0px;
+        display: flex;
+    }
+    footer li a{
+        color: #fff;
+        margin-left: 0px;
+    }
+    .footer-ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-ul li{
+        padding: 10px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+    .img1{
+        width: 40px; 
+        height: 40px;
+    }
+    .img2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100px; 
+        height: 50px;
+    }
+}

@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    }
+
+/* 導覽列 */
+nav{
+    background-color: #D6B167;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top:0;
+    z-index:2;
+}
+
+/* img{
+    object-fit:cover;
+} */
+
+.logo{
+    width:250px;
+    padding-top: 5px;
+    padding-left:50px;
+    padding-bottom: 5px;
+}
+
+/* input{
+    width: 33.3333%;
+    height: 38px;
+    padding-left:10px;
+    background-color:white;
+    border:2px solid #d0d0d0;
+    border-radius:20px;
+} */
+
+nav ul{
+    float: right;
+    margin-right: 70px;
+    margin-bottom: 0px;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: rgb(235, 238, 242);
+    font-size: 16px;
+    /* text-transform: uppercase; */
+}
+
+i.active,i:hover{
+    color: #7a7979;
+    transition:.3s;
+}
+
+a.active,a:hover{
+    color: #7a7979;
+    transition:.3s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(235, 238, 242);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn1{
+    font-size: 20px;
+    color:  #987b48;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* 下拉式選單 */
+@media(max-waidth:952px){
+    .checkbtn1{
+        display: none;
+    }
+    label.log{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    input{
+        width: 40%;
+        height: 38px;
+        padding-left:10px;
+    } 
+    input li i{
+        padding-left:100%;
+    }
+    .logo{
+        width:300px;
+        padding-top: 8px;
+        padding-left:70px;
+    }
+}
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block; 
+    }
+    .checkbtn1{
+        display: block; 
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color:white;
+        top: 0px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a i{
+        color: #987b48;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+    nav ul li a {
+        color: #987b48;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .logo{
+        width:200px;
+        padding-top: 8px;
+        padding-left:20px;
+    }
+    .checkbtn:active,.checkbtn:hover{
+        color: #747474;
+    }
+    /* input{
+        width: 40%;
+        height: 38px;
+        padding-left:10px;
+    } */
+    a:hover,a.active{
+        background: none;
+        color: #747474;
+        padding-left: 10px;
+    }
+    #check:checked~ul{
+        left: 0
+    }
+    #check:checked~ul{
+        right:100% 
+    }  
+ 
+}
+/* 輪播牆 */
+.box3{
+    width: 100%;
+    height: 50px;
+}
+/* 商品列 */
+.row{
+    padding-top: 10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-1{
+    width: 20%;
+    height: 30%;
+    margin: 3% ;  
+}
+
+.box-1 img{
+    width: 350px;
+    height: 350px;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.btn-1{
+    font-size: 1.5%;
+    width: 40%;
+    height: 8%;
+    border-radius:.5rem;
+    background-color: rgb(97, 97, 97);
+    border: 0px;
+    padding: 2%;
+}
+
+.card-1{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+
+.btn-1 a{
+    color: #fff;
+}
+
+.btn-1 a:hover,a.active{
+    background: none;
+    color: #987b48;
+    padding-left: 10px;
+}
+
+@media(max-waidth:952px){
+    .box-1{
+        width: 25%;
+        height: 20%;
+        margin: 1.5% ;  
+    }
+    
+    .box-1 img{
+        width: 350px;
+        height: 350px;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .card-1{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5%;
+    }
+    
+    .btn-1{
+        font-size: 1.5%;
+        width: 40%;
+        height: 8%;
+        border-radius:.5rem;
+        background-color: rgb(42, 65, 119);
+        border: 0px;
+        padding: 2%;
+    }
+    .btn-1 a:hover,a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+
+    }
+    
+@media(max-width:858px){
+    .box-1{
+        width: 80%;
+        height: 20%;
+        margin: 3% ;  
+    }
+    
+    .box-1 img{
+        width: 100%;
+        height: 300px;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+
+    .card-1{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5%;
+    }
+    
+    .btn-1{
+        font-size: 1.5%;
+        width: 40%;
+        height: 8%;
+        border-radius:.5rem;
+        background-color: rgb(42, 65, 119);
+        border: 0px;
+        padding: 2%;
+    }
+    .btn-1 a:hover, a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+}
+    
+/* footer */
+.footer{
+    padding: 50px;
+    width: 100%;
+    height: 30%;
+    background-color: #916d2e;
+}
+
+.footer-container{
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.footer-row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+footer ul{
+    /* list-style: none; */
+    margin-bottom: 30px;
+}
+
+footer ul li i{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer li a{
+    color: #fff;
+    margin-left: 45px;
+}
+
+.footer-col{
+    margin: 2.5%;
+}
+
+.footer-col h3{
+    padding : 0 30px 10px;
+    font-size:18px;
+    color: #fff;
+    text-transform:capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content:center;
+}
+
+
+.footer-col2{
+    margin-top:10%;
+    font-size: 10px;
+    color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(./image/PG1.png);
+}
+
+.footer-col3{
+    width:100%;
+    height: 150px;
+    margin: 50px;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-col4{
+    padding-top:70px ;
+    padding-bottom:20px ;
+    display: flex;
+}
+
+.img1{
+    width: 60px; 
+    height: 60px;
+}
+.img2{
+    padding-top: 15px;
+    width: 150px; 
+    height: 50px;
+}
+
+
+
+@media(max-waidth:952px){
+    .footer-col{
+        margin: 2.5%;
+    }
+    .footer-col3{
+        width:100%;
+        height: 150px;
+        margin: 50px;
+        display: flex;
+        flex-direction:row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .footer-col4{
+        margin-top:70px ;
+        display: flex;
+    }
+    footer li a{
+        color: #fff;
+        margin: 100px;
+    }
+
+    a:hover,a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+    .footer-ul li{
+        display: flex;
+        justify-content:center;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+    .img1{
+        width: 80px; 
+        height: 80px;
+    }
+    .img2{
+        padding-top: 20px;
+        width: 100px; 
+        height: 25px;
+    }
+}
+
+@media(max-width:858px){
+    .footer-col{
+        text-align: center;
+    }
+    .footer-col3{
+        width:100%;
+        height: 150px;
+        margin: 50px;
+        display: flex;
+        flex-direction:column-reverse;
+        align-items:center;
+        justify-content: center;
+    }
+    .footer-col4{
+        padding-top:50px ;
+        padding-bottom: 0px;
+        display: flex;
+    }
+    footer li a{
+        color: #fff;
+        margin-left: 0px;
+    }
+    .footer-ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-ul li{
+        padding: 10px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #bbbbbb;
+        padding-left: 10px;
+    }
+    .img1{
+        width: 40px; 
+        height: 40px;
+    }
+    .img2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100px; 
+        height: 50px;
+    }
+}
