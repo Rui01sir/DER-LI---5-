@@ -1,5 +1,6 @@
 .box-1{
     width:  70%;
+    height: 100%;
     margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -43,6 +44,11 @@
 }
 .box-3{
     margin-top: 5%;
+}
+
+.box11{
+    margin-top: 5%;
+    padding-bottom: 5%;
 }
 
 .box-1 img{
