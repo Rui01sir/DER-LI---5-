@@ -205,14 +205,15 @@ a.active,a:hover{
 }
 
 .box-1{
-    width: 20%;
-    height: 30%;
-    margin: 3% ;  
+    width: 350px;
+    height: 350px;
+    margin: 5% ;  
 }
 
 .box-1 img{
     width: 350px;
     height: 350px;
+    overflow: hidden;
     border-radius: 1.5rem 1.5rem 0 0;
 }
 
@@ -231,7 +232,7 @@ a.active,a:hover{
     flex-direction:column;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 5%;
+    margin-top: 5%;
 }
 
 
@@ -291,7 +292,7 @@ a.active,a:hover{
     }
     
     .box-1 img{
-        width: 100%;
+        width: 300px;
         height: 300px;
         border-radius: 1.5rem 1.5rem 0 0;
     }
@@ -382,7 +383,8 @@ footer li a{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(./image/PG1.png);
+    background-color: #D6B167;
+    /* background-image: url(./image/PG1.png); */
 }
 
 .footer-col3{
@@ -401,8 +403,8 @@ footer li a{
 }
 
 .img1{
-    width: 60px; 
-    height: 60px;
+    width: 200px; 
+    /* height: 60px; */
 }
 .img2{
     padding-top: 15px;
@@ -450,7 +452,7 @@ footer li a{
     }
     .img1{
         width: 80px; 
-        height: 80px;
+        /* height: 80px; */
     }
     .img2{
         padding-top: 20px;
@@ -494,8 +496,9 @@ footer li a{
         padding-left: 10px;
     }
     .img1{
-        width: 40px; 
-        height: 40px;
+        width: 150px;
+        /* height: 40px; */
+        padding-bottom:20px;
     }
     .img2{
         padding-top: 10px;

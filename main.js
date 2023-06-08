@@ -108,24 +108,24 @@ minus5.addEventListener("click", ()=>{
 
 
 
-// const productprice =document.querySelector("productprice")
-// num = document.querySelector(".num");
-// let f = 1;
-// num.addEventListener("")
+const productprice =document.querySelector("productprice")
+num = document.querySelector(".num");
+let f = 1;
+num.addEventListener("")
 
 
 
-// function updatetoltal(){
-//     // var cartContent = document.getElementsByClassName('cart-content')[0]
-//     // var cartBoxes = cartContent.getElementsByClassName('cart-box')
-//     var num = 1;
-//     for(var i = 0; i < cartBoxes.length; i++){
-//         var priceElement = cartBoxes.getElementsByClassName('cart-price')[0]
-//         var quantityElement =cartBoxes.getElementsByClassName('cart-quantity')[0]
-//         var price =  parseFloat(priceElement.innerText.replace("$",""));
-//         var productprice = productpriceElement.value;
-//         num = num + num * productprice;
+function updatetoltal(){
+    // var cartContent = document.getElementsByClassName('cart-content')[0]
+    // var cartBoxes = cartContent.getElementsByClassName('cart-box')
+    var num = 1;
+    for(var i = 0; i < cartBoxes.length; i++){
+        var priceElement = cartBoxes.getElementsByClassName('cart-price')[0]
+        var quantityElement =cartBoxes.getElementsByClassName('cart-quantity')[0]
+        var price =  parseFloat(priceElement.innerText.replace("$",""));
+        var productprice = productpriceElement.value;
+        num = num + num * productprice;
 
-//         document.getElementsByClassName("total-price")[0].innerText="$"+total;
-//     }
-// }
+        document.getElementsByClassName("total-price")[0].innerText="$"+total;
+    }
+}

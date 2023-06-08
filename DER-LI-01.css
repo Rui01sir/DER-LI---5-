@@ -926,7 +926,8 @@ footer li a{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: url(./image/PG1.png);
+    background-color: #D6B167;
+    /* background-image: url(./image/PG1.png); */
 }
 
 .footer-col3{
@@ -945,8 +946,9 @@ footer li a{
 }
 
 .img1{
-    width: 60px; 
-    height: 60px;
+    width: 200px; 
+    /* height: 60px; */
+    
 }
 .img2{
     padding-top: 15px;
@@ -994,7 +996,7 @@ footer li a{
     }
     .img1{
         width: 80px; 
-        height: 80px;
+        /* height: 80px; */
     }
     .img2{
         padding-top: 20px;
@@ -1038,8 +1040,9 @@ footer li a{
         padding-left: 10px;
     }
     .img1{
-        width: 40px; 
-        height: 40px;
+        width: 150px;
+        /* height: 40px; */
+        padding-bottom:20px;
     }
     .img2{
         padding-top: 10px;

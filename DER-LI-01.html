@@ -11,7 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="icon" href="./image/LOGO.png">
     <link rel="stylesheet" href="./DER-LI-01.css">
-    <title id="#">梅汁冬瓜香豆乾-花蓮禮好</title>
+    <title></title>
+  <script>
+    window.onload = function() {
+      var h1Element = document.getElementById('myH1'); // 獲取第一個h1元素
+      var fixedText = '花蓮禮好 - ';
+      document.title = fixedText + h1Element.innerText; // 將h1的文字内容設置成為頁籤名稱
+    };
+  </script>
 </head>
 <body>
 <!-- 導覽列 -->
@@ -58,7 +65,7 @@
     <div class="box2">
       <!-- 商品大圖輪播 -->
       <div class="box3" style="width:60%;height:60%;">
-        <h1 style="padding-bottom: 2%;" id="#">梅汁冬瓜香豆乾</h1>
+        <h1 style="padding-bottom: 2%;" id="myH1">梅汁冬瓜香豆乾</h1>
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -126,7 +133,7 @@
 
     
     <div class="btn3">
-      <div id="price" class="productprice">單價$180</div>
+      <div class="productprice">單價$180</div>
       <div class="box6">
         <span class="minus">-</span>
         <span class="num">01</span>
@@ -368,17 +375,30 @@
         <p>03-8355865</p>
     </div>
     <div class="footer-col4">
-    <img src="./image/LOGO-1.png" alt="LOGO-1" class="img1">
-    <h6 style="margin:20px;"><i class="fa-solid fa-xmark"></i></h6>
+    <img src="./image/LOGO-2.png" alt="LOGO-2" class="img1">
+    <!-- <h6 style="margin:20px;"><i class="fa-solid fa-xmark"></i></h6>
     <img src="./image/W1siZiIsIjk2MTMvYXR0YWNoZWRfcGhvdG9zLzE2NjcwMjYwOTNfMDAwLnBuZy5wbmciXV0.png" 
-    alt="LOGO-2" class="img2">
+    alt="LOGO-2" class="img2"> -->
     </div>
     </div>
     <p style="padding-top:50px;">Copyright © 2023 Designed BY  <a href="./DER-LI-index.html" style="color: black;font-weight: bold;padding-left: 2px;">Hellohi</a> </p>
   </div>
 </footer>
 
+  
+  <!-- 加減功能 -->
   <script src="./main.js"></script>
+
+  <!-- 頁籤名稱 -->
+  <script>
+    window.onload = function() {
+      var h1Element = document.getElementById('myH1'); // 獲取第一個h1元素
+      var fixedText = '花蓮禮好 - ';
+      document.title = fixedText + h1Element.innerText; // 將h1的文字内容設置成為頁籤名稱
+    };
+  </script>
+
+  <!-- 表單篩選功能 -->
   <script>
     let transport = [ "旅宿櫃台","宅配貨運","超商店到店" ];
     let payment1 = [ "線上付款(旅宿)"];
