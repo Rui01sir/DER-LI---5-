@@ -871,7 +871,7 @@ a.active,a:hover{
     /* padding-left: 33.33%; */
     margin: 5%;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     color: #987b48
 }
 .number{
@@ -884,6 +884,25 @@ a.active,a:hover{
 }
 .btn3 i {
     margin:3.6%;
+}
+@media(max-waidth:952px){
+    .productprice{
+        /* padding-left: 33.33%; */
+        margin: 5%;
+        font-weight: bold;
+        font-size: 30px;
+        color: #987b48
+    }
+}
+
+@media(max-width:858px){
+    .productprice{
+        /* padding-left: 33.33%; */
+        margin: 5%;
+        font-weight: bold;
+        font-size: 15px;
+        color: #987b48
+    }
 }
 
 /* 訂單 */
