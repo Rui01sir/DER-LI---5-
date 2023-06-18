@@ -226,7 +226,7 @@ a.active,a:hover{
 .button-1{
     font-size: 1.5%;
     width: 40%;
-    height: 8%;
+    height: 35px;
     border-radius:.5rem;
     background-color: rgb(97, 97, 97);
     border: 0px;
@@ -276,7 +276,7 @@ a.active,a:hover{
     .button-1{
         font-size: 1.5%;
         width: 40%;
-        height: 8%;
+        height: 35px;
         border-radius:.5rem;
         background-color: rgb(42, 65, 119);
         border: 0px;
@@ -314,7 +314,7 @@ a.active,a:hover{
     .button-1{
         font-size: 1.5%;
         width: 40%;
-        height: 20%;
+        height: 35px;
         border-radius:.5rem;
         background-color: rgb(42, 65, 119);
         border: 0px;
