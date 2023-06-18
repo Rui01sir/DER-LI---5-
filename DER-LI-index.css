@@ -278,7 +278,7 @@ a.active,a:hover{
         width: 40%;
         height: 35px;
         border-radius:.5rem;
-        background-color: rgb(42, 65, 119);
+        background-color: rgb(97, 97, 97);
         border: 0px;
         padding: 2%;
     }
@@ -320,7 +320,7 @@ a.active,a:hover{
         width: 40%;
         height: 30px;
         border-radius:.5rem;
-        background-color: rgb(42, 65, 119);
+        background-color: rgb(97, 97, 97);
         border: 0px;
         padding: 2%;
     }
