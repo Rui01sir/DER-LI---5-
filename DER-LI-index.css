@@ -288,6 +288,10 @@ a.active,a:hover{
         padding-left: 10px;
     }
 
+    .button-1 a{
+        color: #fff;
+    }
+
     }
     
 @media(max-width:858px){
@@ -324,6 +328,10 @@ a.active,a:hover{
         background: none;
         color: #bbbbbb;
         padding-left: 10px;
+    }
+
+    .button-1 a{
+        color: #fff;
     }
 }
     
