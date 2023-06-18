@@ -302,13 +302,24 @@ a.active,a:hover{
       }
     
 }
+/* 輪播牆 */
+.square-image{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
 /* 商品列 */
-
-
 .box-1{
     width: 25%;
     height: 20%;
     margin: 2.5% ;  
+}
+
+.box3{
+    width: 600px;
+    /* height: 600px; */
 }
 
 .box-1 img{
@@ -344,6 +355,18 @@ a.active,a:hover{
 }
 
 @media(max-waidth:952px){
+    .box3{
+        width: 50%;
+        height: 50%;
+    }
+
+    .square-image{
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
     .box-1{
         width: 25%;
         height: 20%;
@@ -371,6 +394,7 @@ a.active,a:hover{
         border: 0px;
         padding: 2%;
     }
+    
     .btn-1 a:hover,a.active{
         background: none;
         color: #bbbbbb;
@@ -380,6 +404,19 @@ a.active,a:hover{
     }
     
 @media(max-width:858px){
+    .box3{
+        width: 80%;
+        height: 80%;
+    }
+
+    .square-image{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 5%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
     .box-1{
         width: 80%;
         height: 20%;
@@ -426,7 +463,7 @@ a.active,a:hover{
 .box4{
     font-size: 20px;
     padding-top: 5%;
-    padding-left: 10%;
+    margin-left: 10%;
     display: flex;
     flex-direction:row;
     height: 50%;
@@ -514,7 +551,7 @@ a.active,a:hover{
     }
     
     .box4 ul li i a:hover {
-        border-bottom:5px solid rgb(236, 101, 59);
+        /* border-bottom:5px solid rgb(236, 101, 59); */
         padding-left: 10px;
         transition: .2s;
     }
@@ -540,7 +577,7 @@ a.active,a:hover{
         position:fixed;
         width: 100%;
         height: 100vh;
-        background-color:rgb(255, 60, 60);
+        /* background-color:rgb(255, 60, 60); */
         left:0%;
         top:-100%;
         bottom: 100%;
